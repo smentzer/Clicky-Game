@@ -1,13 +1,16 @@
 import React from "react";
 import Wrapper from "./components/Wrapper";
 import CharacterCard from "./components/CharacterCard";
-// import Score from "./components/Score";
+import Footer from "./components/footer";
+import Score from "./components/Score";
 import characters from "./characters.json";
 
 
 
 function App() {
   return (
+    <div>
+  <Score/>
     <Wrapper>
       <CharacterCard
         image={characters[0].image}
@@ -36,7 +39,30 @@ function App() {
       <CharacterCard
         image={characters[8].image}
       />
+      <CharacterCard
+        image={characters[9].image}
+      />
+      <CharacterCard
+        image={characters[10].image}
+      />
+      <CharacterCard
+        image={characters[11].image}
+      />
+      <CharacterCard
+        image={characters[12].image}
+      />
+      <CharacterCard
+        image={characters[13].image}
+      />
+      <CharacterCard
+        image={characters[14].image}
+      />
+      <CharacterCard
+        image={characters[15].image}
+      />
     </Wrapper>
+    <Footer/>
+    </div>
   );
 }
 

@@ -35,5 +35,33 @@
     {
       "id": 9,
       "image": "tina.png"
+    },
+    {
+      "id": 10,
+      "image": "badTina.png"
+    },
+    {
+      "id": 11,
+      "image": "calvin.png"
+    },
+    {
+      "id": 12,
+      "image": "gene2.png"
+    },
+    {
+      "id": 13,
+      "image": "hugo.png"
+    },
+    {
+      "id": 14,
+      "image": "jimmyJR.png"
+    },
+    {
+      "id": 15,
+      "image": "jimmyPesto.png"
+    },
+    {
+      "id": 16,
+      "image": "kuchikopi.png"
     }
 ]

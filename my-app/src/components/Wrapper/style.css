@@ -1,11 +1,15 @@
+
+
 .wrapper {
     padding-top: 50px;
-    background: #ECEFF1;
+    background: url("../../images/background.jpg") no-repeat center fixed;
+    background-size: cover;
     height: 100%;
     display: flex;
+    flex-direction: column-reverse;
     flex-flow: row wrap;
-    padding: 20px;
-    justify-content: space-around;
+    padding: 160px;
+    justify-content: space-between;
     align-content: flex-start;
     overflow: auto;
   }

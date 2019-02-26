@@ -3,7 +3,7 @@ import "./style.css";
 
 
 
-//pass the image into each card so all 9 are rendered
+//pass the image into each card so all 16 are rendered
 const CharacterCard = props => (
   <div className="card">
     <div className="img-container">

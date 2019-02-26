@@ -1,28 +1,11 @@
-.navbar li {
-    display: inline-block;
+.navbar {
     text-align: center;
   }
-  
-  .itemLeft {
-    width: 15%;
-  }
-  
-  .itemCenter {
-      width: 70%;
-  }
-  
-  .itemRight {
-    width: 15%;
-  }
+
   
   .navbar {
     background: #cf78cf;
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
-  }
-  
-  li {
-    color: white;
-    padding: 15px 0;
+    box-shadow: 0 3px 6px #202428, 0 3px 6px #202428;
   }
   
   body {
