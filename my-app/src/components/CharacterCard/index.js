@@ -7,7 +7,7 @@ import "./style.css";
 const CharacterCard = props => (
   <div className="card">
     <div className="img-container">
-      <img alt={props.image.replace(".jpg", "")} src={require("../../images/" + props.image)} />
+      <img alt={props.image.replace(".png", "")} onClick={() => props.shuffleCharacter(props.characters)} src={require("../../images/" + props.image)} />
     </div>
   </div>
 );
