@@ -1,20 +1,49 @@
 import React from "react";
 import Wrapper from "./components/Wrapper";
 import CharacterCard from "./components/CharacterCard";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import Score from "./components/Score";
 import characters from "./characters.json";
+// import FadeIn from "./components/Transitions";
+
+let score = 0
 
 class App extends React.Component {
 
+ 
   state = {
     characters,
-    // clickedCharacters: [],
-    // score: 0
+    clickedCharacters: [],
+    score: score
+  }
+   
+
+  isClicked = id => {
+   if (this.state.clickedCharacters.includes(id)) {
+     score=0
+     this.setState({score: score})
+     this.setState({clickedCharacters: []})
+   } else {
+     const clickedCharacters = this.state.clickedCharacters
+     clickedCharacters.push(id)
+     score++
+     this.setState({clickedCharacters: clickedCharacters })
+     this.setState({score: score})
+    console.log("Clicked Characters:", this.state.clickedCharacters) 
+    console.log("Score:", score)
+   }
+   
+
   }
 
+  // notClicked = id => {
+  //   const notClickedCharacters = this.state.notClickedCharacters
+  //   notClickedCharacters.push(id)
+  //   this.setState({notClickedCharacters: notClickedCharacters(id)})
+  // }
+
   shuffleCharacter = arr => {
-    console.log("shuffling")
+    // console.log("shuffling")
     // //create a variable to temporarily hold some element
     let temp;
 
@@ -46,21 +75,24 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Score />
-        <Wrapper>
+        <Score score={this.state.score} />
+          <Wrapper>
           {this.state.characters.map(character => (
-            <CharacterCard 
+            <CharacterCard
+            key={character.id} 
             id={character.id}
             image={character.image}
             shuffleCharacter={this.shuffleCharacter}
             characters={this.state.characters}
+            isClicked={this.isClicked}
              />
           ))}
-        </Wrapper>
+          </Wrapper>
         <Footer />
       </div>
     );
   }
 }
+
 
 export default App;

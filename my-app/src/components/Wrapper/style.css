@@ -1,14 +1,14 @@
 
 
 .wrapper {
-    padding-top: 50px;
+    padding: 20px;
     background: url("../../images/background.jpg") no-repeat center fixed;
     background-size: cover;
     height: 100%;
     display: flex;
     flex-direction: column-reverse;
     flex-flow: row wrap;
-    padding: 160px;
+    padding: 170px;
     justify-content: space-between;
     align-content: flex-start;
     overflow: auto;

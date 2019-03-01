@@ -5,9 +5,12 @@ import "./style.css";
 
 //pass the image into each card so all 16 are rendered
 const CharacterCard = props => (
-  <div className="card">
+  <div className="card" id={props.id} onClick={() => props.isClicked(props.id)}>
     <div className="img-container">
-      <img alt={props.image.replace(".png", "")} onClick={() => props.shuffleCharacter(props.characters)} src={require("../../images/" + props.image)} />
+      <img alt={props.image.replace(".png", "")} onClick={
+        () => props.shuffleCharacter(props.characters)
+        } 
+        src={require("../../images/" + props.image)} />
     </div>
   </div>
 );
