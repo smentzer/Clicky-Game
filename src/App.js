@@ -36,11 +36,7 @@ class App extends React.Component {
 
   }
 
-  // notClicked = id => {
-  //   const notClickedCharacters = this.state.notClickedCharacters
-  //   notClickedCharacters.push(id)
-  //   this.setState({notClickedCharacters: notClickedCharacters(id)})
-  // }
+
 
   shuffleCharacter = arr => {
     // console.log("shuffling")
