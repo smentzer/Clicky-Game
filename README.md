@@ -1,6 +1,9 @@
 <a href="https://vast-garden-10162.herokuapp.com/">App here</a>
 
 
+<img src="https://i.gyazo.com/9383f8283ac80ee4994578de68b8212a.gif" alt="Image from Gyazo" width="944"/>
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
